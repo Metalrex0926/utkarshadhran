@@ -1,0 +1,308 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ccc;
+}
+
+/* Navigation */
+nav {
+    background: #444;
+    padding: 0.5rem 0;
+    position: sticky; /* Make nav sticky */
+    top: 0;           /* Stick to the top */
+    z-index: 1000;    /* Ensure it's above other content */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0779e4;
+}
+
+/* Main Content Sections */
+main section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 1px; /* Small gap between sections */
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0779e4;
+    font-weight: 700;
+}
+
+/* About Section */
+#about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    background: #e2e2e2;
+    color: #333;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: #0779e4;
+    color: #fff;
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.job h3 {
+    margin-bottom: 0.3rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.job .job-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.job h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 700;
+}
+
+.job ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.job ul li {
+    margin-bottom: 0.5rem;
+}
+
+.job ul li strong {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Education & Certifications Section */
+.education-entry, .certification-entry {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.education-entry h3, .certification-entry h3 {
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+}
+
+.education-entry p, .certification-entry p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.certification-entry p em {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Languages Section */
+.languages-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.languages-list li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+#contact ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+#contact ul li strong {
+    font-weight: 700;
+}
+
+#contact a {
+    color: #0779e4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #0558a2;
+    text-decoration: underline;
+}
+
+#contact p:first-of-type { /* The "Feel free to reach out!" text */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header .tagline {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-list li {
+        display: block;
+        margin: 5px auto; /* Center blocks on mobile */
+        max-width: 250px; /* Prevent wide blocks */
+    }
+
+    .job ul {
+        margin-left: 15px; /* Less indent on mobile */
+    }
+
+    #contact ul {
+        padding-left: 0; /* Remove default padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 0;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header .tagline {
+        font-size: 0.9rem;
+    }
+    main section {
+        padding: 2rem 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+}
